@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101114"><title>HOANGGIA 3D STUDIO · Prompt Generator</title>
+<style>
+:root{font-family:Inter,Arial,sans-serif;color:#f3f2ef;background:#0e0f12}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1460px;margin:auto;padding:26px}.top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #292a30;padding-bottom:20px}.brand{font-weight:800;letter-spacing:.14em;font-size:18px}.brand span{color:#bba77b}.micro{color:#9b9ba2;font-size:11px;letter-spacing:.18em;margin-top:7px}.status{color:#b6ac93;font-size:12px;border:1px solid #504a39;border-radius:30px;padding:8px 13px}.hero{padding:38px 0 26px}.hero h1{font-size:clamp(28px,4vw,48px);margin:5px 0 12px;letter-spacing:-.04em}.hero p{color:#9e9fa6;max-width:740px;line-height:1.7}.tag{font-size:11px;color:#c3aa76;letter-spacing:.2em}.layout{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,.95fr);gap:20px}.panel{background:#18191d;border:1px solid #303138;border-radius:18px;padding:24px}.panel h2{font-size:17px;margin:0 0 22px}.section{border-top:1px solid #303138;padding-top:22px;margin-top:22px}.section h3{font-size:14px;color:#d8c399;display:flex;gap:11px;align-items:center}.section h3 em{font-size:12px;color:#8e8f95;font-style:normal}.field{margin-top:16px}label{display:block;color:#c4c4c9;font-size:12px;margin-bottom:8px}input,select,textarea{display:block;width:100%;background:#111216;border:1px solid #393a42;border-radius:9px;color:#f0eff0;padding:12px;outline:none}input:focus,select:focus,textarea:focus{border-color:#baa473}textarea{min-height:85px;resize:vertical;line-height:1.6}.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}.checks{display:grid;gap:9px;margin-top:12px}.checks label{display:flex;gap:9px;align-items:center;margin:0;cursor:pointer}.checks input{width:auto;accent-color:#bdaa82}.file{border:1px dashed #51515b;border-radius:12px;padding:18px;background:#111216}.file input{border:0;padding:0;background:transparent;font-size:12px}.hint{font-size:11px;color:#85868f;line-height:1.6;margin-top:8px}.actions{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0}.btn{border:1px solid #47474f;background:#26272c;color:#f4f1ec;border-radius:9px;padding:12px 16px;font-size:13px}.btn.primary{background:#c0a97d;color:#151515;border-color:#c0a97d;font-weight:800}.btn:disabled{opacity:.4;cursor:not-allowed}.output{white-space:pre-wrap;overflow-wrap:anywhere;background:#101115;border:1px solid #373840;border-radius:12px;padding:21px;min-height:450px;max-height:900px;overflow:auto;color:#dadbe0;font-size:12px;line-height:1.8;font-family:Consolas,monospace}.step{color:#9b9da5;font-size:12px;line-height:1.6}.foot{padding:25px 0;color:#666870;font-size:12px}.pill{display:inline-block;border:1px solid #4e4738;color:#c0ac85;border-radius:50px;padding:5px 9px;font-size:11px}.sticky{position:sticky;top:18px;align-self:start}@media(max-width:880px){.layout{grid-template-columns:1fr}.sticky{position:static}.shell{padding:16px}.panel{padding:18px}.two{grid-template-columns:1fr}.status{display:none}}
+</style></head><body><div class="shell"><header class="top"><div><div class="brand">HOANGGIA <span>3D STUDIO</span></div><div class="micro">CODEX WORKFLOW · PROMPT GENERATOR</div></div><div class="status">● V1.0 · PREPARE ONLY</div></header>
+<section class="hero"><div class="tag">HOANGGIA AI / TECHNICAL PROMPT SYSTEM</div><h1>Biến yêu cầu thành<br>nhiệm vụ 3D rõ ràng.</h1><p>Trình tạo prompt chuyên dụng cho workflow HOANGGIA 3D Studio trên Codex. Giữ đúng 5 nguyên tắc, không tự thực thi, không can thiệp cấu hình trên máy tính.</p><span class="pill">01 Bối cảnh</span> <span class="pill">02 Vai trò</span> <span class="pill">03 Nhiệm vụ</span> <span class="pill">04 Ràng buộc</span> <span class="pill">05 Kết quả</span></section>
+<main class="layout"><section class="panel"><h2>THIẾT LẬP NHIỆM VỤ</h2>
+<div class="section"><h3><em>01</em> BỐI CẢNH</h3><div class="field"><label>Dự án / tên sản phẩm</label><input id="product" value="Sản phẩm nội thất từ ảnh tham chiếu"></div><div class="field"><label>Mục tiêu thiết kế</label><textarea id="goal">Tái dựng mô hình 3D có thể chỉnh sửa, bám sát ảnh tham chiếu, phục vụ thiết kế và diễn họa nội thất.</textarea></div><div class="two"><div class="field"><label>Phần mềm</label><select id="software"><option value="auto">HG tự đề xuất</option><option>Blender</option><option>SketchUp</option><option>3ds Max</option></select></div><div class="field"><label>Độ chi tiết</label><select id="detail"><option>Concept</option><option selected>High Detail</option><option>Production</option></select></div></div></div>
+<div class="section"><h3><em>02</em> VAI TRÒ</h3><div class="field"><label>Chuyên môn AI cần vận dụng</label><textarea id="role">Codex 3D Technical Orchestrator; chuyên gia Interior/Furniture Modeling, hình học 3D, topology, CAD, vật liệu PBR, UV, camera matching và lập trình tự động hóa Blender Python, SketchUp Ruby API, 3ds Max MAXScript/Python.</textarea></div></div>
+<div class="section"><h3><em>03</em> NHIỆM VỤ</h3><div class="field"><label>Loại công việc</label><select id="task"><option value="image">Tái dựng mô hình 3D từ ảnh</option><option value="cad">Dựng 3D từ bản vẽ CAD / PDF</option><option value="edit">Chỉnh sửa mô hình 3D có sẵn</option><option value="scene">Dựng không gian nội thất</option></select></div><div class="field"><label>Ảnh / tệp tham chiếu (thông tin file để ghi vào prompt)</label><div class="file"><input type="file" id="files" multiple accept="image/*,.pdf,.dwg,.dxf,.skp,.blend,.max,.fbx,.obj,.glb"><div class="hint">Tệp chỉ được chọn trong trình duyệt; website không tải file lên Codex. Khi gửi prompt, đính kèm lại những file này trong môi trường Codex.</div></div><div id="fileNames" class="hint">Chưa chọn tệp.</div></div><div class="field"><label>Kích thước xác nhận (mm)</label><input id="dimensions" placeholder="Ví dụ: Rộng 2050 × Sâu 950 × Cao 780; để trống nếu chưa biết"></div><div class="field"><label>Chi tiết cần thực hiện</label><textarea id="instructions" placeholder="Mô tả các bộ phận, góc nhìn, vật liệu, yêu cầu đặc biệt..."></textarea></div></div>
+<div class="section"><h3><em>04</em> RÀNG BUỘC</h3><div class="field"><label>Phải giữ nguyên</label><textarea id="preserve">Giữ nguyên silhouette, hình dáng, tỷ lệ, các chi tiết nhìn thấy, vật liệu có căn cứ và toàn bộ kích thước đã được xác nhận.</textarea></div><div class="field"><label>Được phép thay đổi</label><textarea id="change">Chỉ tối ưu topology, cách tổ chức scene, UV, cách đặt tên đối tượng và cấu trúc script để tăng khả năng chỉnh sửa, miễn không làm sai thiết kế tham chiếu.</textarea></div><div class="checks"><label><input type="checkbox" id="noGuess" checked> Không bịa cấu tạo khuất hoặc kích thước chính xác</label><label><input type="checkbox" id="confidence" checked> Phân loại XÁC NHẬN / SUY LUẬN / CẦN XÁC NHẬN</label><label><input type="checkbox" id="noWorkflow" checked> Không sửa workflow Codex gốc</label></div></div>
+<div class="section"><h3><em>05</em> KẾT QUẢ</h3><div class="two"><div class="field"><label>Định dạng đầu ra</label><select id="format"><option>File gốc phần mềm + GLB</option><option>File gốc + FBX + OBJ</option><option>Chỉ file gốc của phần mềm</option><option>GLB + FBX + OBJ</option></select></div><div class="field"><label>Ngôn ngữ prompt</label><select id="language"><option value="vi">Tiếng Việt</option><option value="en">English</option></select></div></div><div class="field"><label>Yêu cầu bổ sung về bàn giao</label><textarea id="deliver">Báo cáo phân tích, lựa chọn phần mềm có lý do, kế hoạch dựng hình, danh sách đối tượng/vật liệu, hướng dẫn cho Codex, script dự kiến và checklist kiểm thử.</textarea></div></div>
+</section>
+<aside class="panel sticky"><h2>CODEX PROMPT OUTPUT</h2><div class="step">Năm phần bắt buộc · Tạo trực tiếp trên trình duyệt · Không cần tài khoản hoặc API key.</div><div class="actions"><button class="btn primary" id="generate">✦ Tạo prompt</button><button class="btn" id="copy">Sao chép</button><button class="btn" id="download">Tải .txt</button></div><div class="output" id="output" aria-live="polite"></div><div class="hint" id="message">Prompt là chỉ dẫn chuẩn bị cho Codex, không xác nhận đã dựng 3D hay đã kết nối máy tính.</div></aside></main><footer class="foot">© HOANGGIA AI · PROMPT GENERATOR · Independent companion for the existing Codex workflow</footer></div>
+<script>
+"use strict";
+const $=id=>document.getElementById(id),val=id=>$(id).value.trim(),checked=id=>$(id).checked;
+const taskVI={image:"Tái dựng mô hình 3D từ ảnh",cad:"Dựng mô hình 3D từ CAD/PDF",edit:"Chỉnh sửa mô hình 3D có sẵn",scene:"Dựng không gian nội thất"};
+const taskEN={image:"Reconstruct a 3D model from reference imagery",cad:"Build a 3D model from CAD/PDF drawings",edit:"Edit an existing 3D model",scene:"Model an interior scene"};
+let prompt="";
+function files(){return Array.from($("files").files).map(f=>f.name);}
+function build(){
+ const isEn=val("language")==="en",names=files(),ref=names.length?names.join(", "):(isEn?"No files selected; request actual reference files before geometric analysis.":"Chưa chọn file; cần cung cấp nguồn tham chiếu thực tế trước khi phân tích hình học.");
+ const sw=val("software")==="auto"?(isEn?"HG AUTO SELECT — compare Blender, SketchUp, and 3ds Max and justify the choice.":"HG TỰ ĐỀ XUẤT — đánh giá Blender, SketchUp, 3ds Max, chọn và giải thích lý do."):val("software");
+ const dim=val("dimensions")||(isEn?"NOT CONFIRMED; do not invent exact dimensions.":"CHƯA XÁC NHẬN; không tự đặt kích thước chính xác.");
+ if(isEn)return `HOANGGIA 3D STUDIO — CODEX WORKFLOW TASK
+MODE: PREPARE_ONLY | DETAIL: ${val("detail")}
+
+1. CONTEXT
+I am an interior architect working on: ${val("product")}.
+Goal: ${val("goal")}
+Software: ${sw}.
+
+2. ROLE
+Act as: ${val("role")}
+Use the selected software's supported APIs; keep the existing Codex workflow authoritative.
+
+3. TASK
+Task type: ${taskEN[val("task")]}.
+Reference files (attach these files separately in Codex): ${ref}
+Confirmed dimensions (mm): ${dim}
+Additional instructions: ${val("instructions")||"Follow the provided sources."}
+Validate actual files, analyze visible geometry, proportions, parts, materials, occlusion and viewpoint. Plan High Detail modeling and prepare a software-specific task and draft script only when justified by evidence.
+
+4. CONSTRAINTS
+Preserve: ${val("preserve")}
+Allowed changes: ${val("change")}
+${checked("noGuess")?"Do not invent hidden construction or precise dimensions.":""}
+${checked("confidence")?"Label findings CONFIRMED / INFERRED / NEEDS CONFIRMATION.":""}
+${checked("noWorkflow")?"Do not modify the existing Codex workflow.":""}
+No assumed PC connection, installation, permissions or successful execution. Do not run commands or overwrite files. Only claim successful modeling/export after verified execution.
+
+5. OUTPUT
+Requested formats: ${val("format")}.
+Deliverables: ${val("deliver")}
+Return an image analysis, software selection rationale, modeling plan, object/material manifest, Codex task steps, draft script plan, validation checklist and unresolved questions. Clearly distinguish planned outputs from generated and tested files.`;
+ return `HOANGGIA 3D STUDIO — CODEX WORKFLOW TASK
+CHẾ ĐỘ: PREPARE_ONLY | ĐỘ CHI TIẾT: ${val("detail")}
+
+1. BỐI CẢNH
+Tôi là kiến trúc sư nội thất, đang triển khai: ${val("product")}.
+Mục tiêu: ${val("goal")}
+Phần mềm: ${sw}.
+
+2. VAI TRÒ
+Bạn là: ${val("role")}
+Áp dụng API phù hợp với phần mềm được chọn, lấy workflow Codex hiện có làm quy trình thực thi gốc.
+
+3. NHIỆM VỤ
+Loại công việc: ${taskVI[val("task")]}.
+File tham chiếu (cần đính kèm lại khi gửi vào Codex): ${ref}
+Kích thước xác nhận (mm): ${dim}
+Yêu cầu riêng: ${val("instructions")||"Thực hiện theo ảnh/tài liệu thực tế được cung cấp."}
+Kiểm tra file thật trước khi phân tích. Phân tích hình học nhìn thấy, silhouette, tỷ lệ, các bộ phận, vật liệu, phần bị che khuất và góc camera. Lập kế hoạch dựng hình ${val("detail")}; tạo nhiệm vụ kỹ thuật và đề xuất script theo phần mềm phù hợp, chỉ dựa trên dữ liệu có căn cứ.
+
+4. RÀNG BUỘC
+Bảo toàn: ${val("preserve")}
+Được phép thay đổi: ${val("change")}
+${checked("noGuess")?"Không tự bịa cấu tạo khuất hoặc kích thước chính xác.":""}
+${checked("confidence")?"Phân loại XÁC NHẬN / SUY LUẬN / CẦN XÁC NHẬN.":""}
+${checked("noWorkflow")?"Không thay đổi workflow Codex đã xây dựng.":""}
+Không giả định máy tính đã kết nối, phần mềm đã được cài đặt hoặc có quyền chạy lệnh. Không tự thực thi hay ghi đè file. Chỉ kết luận dựng hình hoặc xuất file thành công khi đã chạy và kiểm chứng thực tế.
+
+5. KẾT QUẢ
+Định dạng file mục tiêu: ${val("format")}.
+Nội dung bàn giao: ${val("deliver")}
+Trả về báo cáo phân tích ảnh, lý do chọn phần mềm, kế hoạch High Detail, danh sách đối tượng/vật liệu, bước tác vụ Codex, kế hoạch script và checklist kiểm thử, cùng các điểm cần xác nhận. Phân biệt rõ đầu ra dự kiến với file thực sự đã tạo và kiểm chứng.`;
+}
+function generate(){prompt=build();$("output").textContent=prompt;$("message").textContent="Đã tạo prompt từ các thông số hiện tại.";return prompt}
+$("generate").addEventListener("click",generate);
+$("copy").addEventListener("click",async()=>{const value=generate();try{await navigator.clipboard.writeText(value);$("message").textContent="Đã sao chép prompt."}catch(e){$("message").textContent="Trình duyệt chặn clipboard. Hãy chọn phần nội dung và sao chép thủ công."}});
+$("download").addEventListener("click",()=>{const value=generate();const a=document.createElement("a");const u=URL.createObjectURL(new Blob([value],{type:"text/plain;charset=utf-8"}));a.href=u;a.download="HOANGGIA-3D-STUDIO-CODEX-PROMPT.txt";a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)});
+$("files").addEventListener("change",()=>$("fileNames").textContent=files().join(" · ")||"Chưa chọn tệp.");
+generate();
+</script></body></html>
