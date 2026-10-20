@@ -120,6 +120,7 @@ function build(){
  const sw=val("software")==="auto"?(isEn?"HG AUTO SELECT — compare Blender, SketchUp, and 3ds Max and justify the choice.":"HG TỰ ĐỀ XUẤT — đánh giá Blender, SketchUp, 3ds Max, chọn và giải thích lý do."):val("software");
  const dim=dimensionSpec()||(isEn?"NOT CONFIRMED; do not invent exact dimensions.":"CHƯA XÁC NHẬN; không tự đặt kích thước chính xác.");
  if(isEn)return `HOANGGIA 3D STUDIO — CODEX WORKFLOW TASK
+WORKFLOW: Invoke the $hoanggia-3d-studio skill and follow its G0–G5 modeling and verification gates. If the skill is unavailable in this Codex workspace, state that clearly and continue with the workflow instructions in this prompt.
 MODE: PREPARE_ONLY | DETAIL: ${detailSpec()}
 
 1. CONTEXT
@@ -152,6 +153,7 @@ Requested formats: ${val("format")}.
 Deliverables: ${val("deliver")}
 Return an image analysis, software selection rationale, modeling plan, object/material manifest, Codex task steps, draft script plan, validation checklist and unresolved questions. Clearly distinguish planned outputs from generated and tested files.`;
  return `HOANGGIA 3D STUDIO — CODEX WORKFLOW TASK
+WORKFLOW: Hãy gọi skill $hoanggia-3d-studio và tuân theo các cổng dựng hình, kiểm chứng G0–G5. Nếu workspace Codex hiện tại không có skill này, hãy nói rõ và tiếp tục theo chỉ dẫn workflow trong prompt.
 CHẾ ĐỘ: PREPARE_ONLY | ĐỘ CHI TIẾT: ${detailSpec()}
 
 1. BỐI CẢNH
@@ -195,3 +197,4 @@ $("download").addEventListener("click",()=>{if(!prompt){$("message").textContent
 $("copy").disabled=true;$("download").disabled=true;
 $("files").addEventListener("change",()=>$("fileNames").textContent=files().join(" · ")||"Chưa chọn tệp.");
 </script></body></html>
+
